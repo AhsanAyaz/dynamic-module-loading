@@ -1,6 +1,10 @@
-<p>user works!</p>
-<button (click)="loadModule('Admin')">Load Admin Module</button>
-<button (click)="loadModule('Moderator')">Load Moderator Module</button>
-<a routerLink="/user/admin">Go To Admin</a>
-<a routerLink="/user/moderator">Go To Moderator</a>
+<p>I am User Component</p>
+<div class="mt-4 flex gap-4">
+  <button class="rounded-md px-3 py-1.5 text-sm bg-indigo-600 hover:bg-indigo-700 text-white" (click)="loadModule('Admin')">Load Admin Module</button>
+  <button class="rounded-md px-3 py-1.5 text-sm bg-indigo-600 hover:bg-indigo-700 text-white" (click)="loadModule('Moderator')">Load Moderator Module</button>
+</div>
+<div class="mt-4 flex gap-4">
+  <a class="rounded-md px-3 py-1.5 text-sm text-indigo-600 hover:text-indigo-700 hover:underline" routerLink="/user/admin">Go To Admin</a>
+  <a class="rounded-md px-3 py-1.5 text-sm text-indigo-600 hover:text-indigo-700 hover:underline" routerLink="/user/moderator">Go To Moderator</a>
+</div>
 <router-outlet></router-outlet>
